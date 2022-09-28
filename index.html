@@ -1,4 +1,234 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Ivan Lim - Personal Site</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="funky.css">
+    </head>
+
+    <body> <!--background="Resources/Blockchain_bg_image.jpeg"-->
+
+        <div class="container-fluid">
+
+            <!--1st row - nav-->
+            <div class="row">
+
+                <!--box with black borders-->
+                <div class="border border-dark border-1 px-0">
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Places I wish to travel to</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Get in touch</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+
+            <!--2nd row - [location, name, bio], [photo]-->
+            <div class="row">
+
+                <div class="col-lg-2 border border-dark border-1 px-0"> <!--rmb to get rid of padding so the bottom cols can span "full width"-->
+                    <!--Photo-->
+                    <div class="py-5">
+                        <img src="Resources/Ivan.jpeg" class="img-fluid border border-dark border-1" id="Ivan" alt="Nice photo of smiling Ivan">
+                    </div>
+                </div>
+
+                <div class="col-lg-10 border border-dark border-1 px-0">
+                    <!--Location-->
+                    <div class="text-center py-2">
+                        <h2 class="py-3 text-center"><b>About Me</b></h2>
+                        <img src="Resources/Location_icon.png" class="img-fluid mb-2" id="Location_icon" alt="Location image"><b id="Singapore">Singapore</b>
+                    </div>
+                    <div class="py-2">
+                        <!--Name-->
+                        <h1 class="ps-4">Ivan Lim</h1>
+                        <!--Bio-->
+                        <div class="alert alert-light border border-dark border-1" role="alert">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Year 2 SMU student</li>
+                                <li class="list-group-item">Studying Information Systems</li>
+                                <li class="list-group-item">
+                                    Exploring/Interested in:
+                                    <ul>
+                                        <li>Blockchain</li>
+                                        <li>Cybersecurity</li>
+                                    </ul>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--3rd row - carousel of travel videos-->
+            <div class="row">
+
+                <!--box with black borders-->
+                <div class="border border-dark border-1 text-center">
+
+                    <h2 class="pt-3"><b>Places I wish to travel to</b></h>
+                    <!-- Videos -->
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/A8pfW5KMrdM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="border border-dark border-1"></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4lXr0v5doeQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="border border-dark border-1"></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OT11kbPWNzc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="border border-dark border-1"></iframe>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!--4th row - My Docs-->
+            <div class="row">
+
+                <!--box with black borders-->
+                <div class="border border-dark border-1 text-center">
+
+                    <h3 class="py-3"><b>Resources</b></h3>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card border border-dark border-1 h-100">
+                                <img src="Resources/Blockchain_card_img.jpg" class="card-img-top" alt="Blockchain image">
+                                <div class="card-body">
+                                <h5 class="card-title">Blockchain</h5>
+                                <p class="card-text">These are my personal notes for blockchain for now</p>
+                                <a href="https://docs.google.com/document/d/1BhXVdIbz4w5BWn8IQOi1VNLnv97CRuyYoPsY3S6rWy8/edit?usp=sharing"><button type="button" class="btn btn-dark">To The Moon!</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-dark border-1 h-100">
+                                <img src="Resources/Cybersecurity_card_image.png" class="card-img-top" alt="Cybersecurity image">
+                                <div class="card-body">
+                                <h5 class="card-title">Cybersecurity</h5>
+                                <p class="card-text">These are my personal notes for cybersecurity for now</p>
+                                <a href="https://docs.google.com/document/d/1l0TFC1ZTdmIfILM0fLJlt-Ggtcm-D2sWUVsoP_fYBEw/edit?usp=sharing"><button type="button" class="btn btn-dark">FLAG{pR0t3c}</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-dark border-1 h-100">
+                                <img src="Resources/CryptoZombies_card_image.png" class="card-img-top" alt="Cryptozombies image">
+                                <div class="card-body">
+                                <h5 class="card-title">Cryptozombies</h5>
+                                <p class="card-text">This is a website I plan to learn some solidity through gamification</p>
+                                <a href="https://cryptozombies.io/"><button type="button" class="btn btn-dark">Brainsss</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border border-dark border-1 h-100">
+                                <img src="Resources/SMU_card_image.png" class="card-img-top" alt="SMU image">
+                                <div class="card-body">
+                                <h5 class="card-title">Singapore Management University</h5>
+                                <p class="card-text">This is the school I am currently studying at</p>
+                                <a href="https://www.smu.edu.sg/"><button type="button" class="btn btn-dark">Monday Blues</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!--5th row - Get in touch Form-->
+            <div class="row">
+
+                <!--box with black borders-->
+                <div class="border border-dark border-1 text-center">
+
+                    <h3 class="py-3"><b>Get In Touch</b></h3>
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Leave a message</label>
+                          <input type="text" class="form-control border border-dark border-1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Leave your contacts in the message! I'll never share your contacts with anyone else.</div>
+                        </div>
+                        <button type="submit" class="btn btn-dark mb-5" id="Submit_Form_Button" onmouseover="changeAppearance()" onmouseout="changeBackAppearance()">Submit</button>
+
+                </div> 
+                
+            </div>
+
+        </div>
+
+        <script>
+            function changeAppearance(){
+                myBtn = document.getElementById("Submit_Form_Button")
+                myBtn.innerText = "Thank You!"
+            }
+
+            function changeBackAppearance(){
+                myBtn = document.getElementById("Submit_Form_Button")
+                myBtn.innerText = "Submit"
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!--
+    <!DOCTYPE html>
 
 <head>
     <link rel="stylesheet" href="funky.css">
@@ -11,3 +241,4 @@
         I'm Ivan Lim, and I am a SMU undergraduate studying Information Systems.
     </p>
 </body>
+-->
