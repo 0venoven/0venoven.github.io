@@ -29,3 +29,16 @@ body {
     max-height:350px;
     border-radius: 10%;
 }
+
+.list-custom {
+    background-color:#000;
+    color: #9fffdd;
+}
+
+.navbar-custom{
+    background-color:#000;
+}
+
+.navbar-custom .navbar-text {
+    color: green;
+}
