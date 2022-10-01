@@ -22,7 +22,7 @@
             <div class="row">
 
                 <!--box with black borders-->
-                <div class="border-bottom border-dark border-2 px-0">
+                <div class="border-bottom border-dark border-3">
                     <!-- Navbar -->
                     <nav class="navbar navbar-expand-lg bg-transparent">
                         <div class="container-fluid">
@@ -53,39 +53,40 @@
             </div>
 
             <!--2nd row - [location, name, bio], [photo]-->
+
+            <div class="my-2">
+                <h1 class="text-center my-5 fs-1" id="About"><b>About Me</b></h1>
+            </div>
+
             <div class="row">
 
-                <div class="col-lg-2 px-0"> <!--rmb to get rid of padding so the bottom cols can span "full width"-->
-                    <!--Photo-->
-                    <div class="py-5">
-                        <img src="Resources/Ivan.jpeg" class="img-fluid border border-dark border-2" id="Ivan" alt="Nice photo of smiling Ivan">
-                    </div>
+                <!--Photo-->
+                <div class="my-5 col-sm-4">
+                    <img src="Resources/Ivan.jpeg" class="img-fluid border border-dark border-2" id="Ivan" alt="Nice photo of smiling Ivan">
                 </div>
 
-                <div class="col-lg-10 px-0">
-                    <!--Location-->
-                    <div class="py-2">
-                        <h2 class="py-3 text-center" id="About"><b>About Me</b></h2>
-                        
+                <div class="my-2 col-sm-8">
+                    <!--Name-->
+                    <h2 class="ms-4">Ivan Lim</h2>
+                    <div class="my-3">
+                        <img src="Resources/Location_icon.png" class="img-fluid mb-2 ms-3" id="Location_icon" alt="Location image">
+                        <b id="Singapore">
+                            Singapore
+                        </b>    
                     </div>
-                    <div class="py-2">
-                        <!--Name-->
-                        <h1 class="ps-4"><b><b>Ivan Lim</b></b></h1>
-                        <img src="Resources/Location_icon.png" class="img-fluid mb-2 ms-3" id="Location_icon" alt="Location image"><b id="Singapore">Singapore</b>
-                        <!--Bio-->
-                        <div class="alert alert-custom border border-dark border-2 list-custom" role="alert">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item list-custom">Year 2 SMU student</li>
-                                <li class="list-group-item list-custom">Studying Information Systems</li>
-                                <li class="list-group-item list-custom">
-                                    Exploring/Interested in:
-                                    <ul>
-                                        <li>Blockchain</li>
-                                        <li>Cybersecurity</li>
-                                    </ul>
-                                </li>
-                              </ul>
-                        </div>
+                    <!--Bio-->
+                    <div class="alert alert-custom border border-dark border-2 list-custom" role="alert">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-custom">Year 2 SMU student</li>
+                            <li class="list-group-item list-custom">Studying Information Systems</li>
+                            <li class="list-group-item list-custom">
+                                Exploring/Interested in:
+                                <ul>
+                                    <li>Blockchain</li>
+                                    <li>Cybersecurity</li>
+                                </ul>
+                            </li>
+                            </ul>
                     </div>
                 </div>
 
@@ -97,7 +98,7 @@
                 <!--box with black borders-->
                 <div class="text-center">
 
-                    <h2 class="pt-3" id="Places"><b>Places I wish to travel to</b></h2>
+                    <h1 class="fs-1 my-5" id="Places"><b>Places I wish to travel to</b></h1>
                     <!-- Videos -->
                     <div id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3" data-bs-ride="false">
                         <div class="carousel-inner text-center">
@@ -131,7 +132,7 @@
                 <!--box with black borders-->
                 <div class="text-center">
 
-                    <h2 class="py-3" id="Resources"><b>Resources</b></h2>
+                    <h1 class="fs-1 my-5" id="Resources"><b>Resources</b></h1>
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
@@ -186,7 +187,7 @@
                 <!--box with black borders-->
                 <div class="text-center">
 
-                    <h2 class="py-3" id="Get"><b>Get In Touch</b></h2>
+                    <h1 class="fs-1 my-5" id="Get"><b>Get In Touch</b></h1>
                     <form>
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Leave a message</label>
