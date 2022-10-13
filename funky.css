@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-size: cover;
     height: 100%;*/
-    background-image: linear-gradient(135deg, #9fffdd, #A494F5);
+    background-image: linear-gradient(to top, #96fbc4 0%, #ace0f9 100%);
 }
 
 #Location_icon {
