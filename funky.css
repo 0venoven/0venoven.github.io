@@ -27,6 +27,7 @@ body {
 }
 
 .box-custom {
+    /*blue used here: 4fc3f7*/
     box-shadow: -5px 5px 0px 0px rgba(79,195,247,0.75);
     -webkit-box-shadow: -5px 5px 0px 0px rgba(79,195,247,0.75);
     -moz-box-shadow: -5px 5px 0px 0px rgba(79,195,247,0.75);
@@ -43,4 +44,8 @@ body {
 
 .navbar-custom .navbar-text {
     color: green;
+}
+
+.align-custom {
+    display: inline-block;
 }
